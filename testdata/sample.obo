@@ -1,0 +1,59 @@
+format-version: 1.2
+data-version: releases/2024-01-01
+ontology: chebi
+
+[Term]
+id: CHEBI:15377
+name: water
+namespace: chemical_entity
+def: "An oxygen hydride consisting of an oxygen atom that is covalently bonded to two hydrogen atoms." [Wikipedia:Water]
+subset: 3_STAR
+synonym: "H2O" EXACT FORMULA [ChEBI:FORMULA]
+synonym: "oxidane" EXACT IUPAC_NAME [IUPAC:IUPAC_NAME]
+synonym: "dihydrogen oxide" RELATED [ChEBI:ChEBI]
+xref: CAS:7732-18-5
+xref: Gmelin:117
+is_a: CHEBI:33693 ! oxygen hydride
+is_a: CHEBI:35341 ! chalcogen hydride
+property_value: http://purl.obolibrary.org/obo/chebi/formula "H2O" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/mass "18.01528" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/H2O/h1H2" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/smiles "O" xsd:string
+
+[Term]
+id: CHEBI:33693
+name: oxygen hydride
+namespace: chemical_entity
+def: "A hydride of oxygen." []
+is_a: CHEBI:33692 ! hydrides
+is_a: CHEBI:25701 ! oxygen molecular entity
+relationship: has_part CHEBI:15379 ! oxygen atom
+
+[Term]
+id: CHEBI:17634
+name: D-glucose
+namespace: chemical_entity
+def: "An aldohexose used as a source of energy and metabolic intermediate." [KEGG:C00031]
+subset: 3_STAR
+synonym: "D-Glc" EXACT ABBREVIATION [ChEBI:ABBREVIATION]
+synonym: "grape sugar" RELATED [ChEBI:ChEBI]
+synonym: "dextrose" EXACT [ChEBI:ChEBI]
+xref: CAS:50-99-7
+xref: KEGG:C00031
+alt_id: CHEBI:4167
+is_a: CHEBI:33917 ! aldohexose
+is_obsolete: false
+
+[Term]
+id: CHEBI:00001
+name: obsolete term example
+namespace: chemical_entity
+def: "This term is obsolete." []
+is_obsolete: true
+comment: Obsoleted because it was a duplicate.
+
+[Typedef]
+id: has_part
+name: has part
+is_transitive: true

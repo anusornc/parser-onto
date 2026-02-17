@@ -1,0 +1,34 @@
+# Binaries
+chebi-parser
+classify
+benchmark
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test data (large files)
+testdata/chebi.obo
+testdata/chebi.owl
+
+# Build artifacts
+/tmp/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Rust
+rust-impl/target/
+rust-impl/Cargo.lock
+
+# Go
+*.test
+*.out

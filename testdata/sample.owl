@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/chebi.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/chebi/releases/2024-01-01/chebi.owl"/>
+    </owl:Ontology>
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_15377">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">water</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33693"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35341"/>
+        <oboInOwl:hasExactSynonym>H2O</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>oxidane</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>dihydrogen oxide</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref>CAS:7732-18-5</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Gmelin:117</oboInOwl:hasDbXref>
+        <obo:CHEBI_formula>H2O</obo:CHEBI_formula>
+        <obo:CHEBI_mass>18.01528</obo:CHEBI_mass>
+        <rdfs:comment>An oxygen hydride consisting of an oxygen atom that is covalently bonded to two hydrogen atoms.</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33693">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oxygen hydride</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33692"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25701"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_17634">
+        <rdfs:label>D-glucose</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33917"/>
+        <oboInOwl:hasExactSynonym>D-Glc</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>dextrose</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>grape sugar</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref>CAS:50-99-7</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>KEGG:C00031</oboInOwl:hasDbXref>
+        <oboInOwl:hasAlternativeId>CHEBI:4167</oboInOwl:hasAlternativeId>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_00001">
+        <rdfs:label>obsolete term example</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <rdfs:comment>Obsoleted because it was a duplicate.</rdfs:comment>
+    </owl:Class>
+
+</rdf:RDF>
