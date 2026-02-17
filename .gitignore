@@ -2,6 +2,7 @@
 chebi-parser
 classify
 benchmark
+bin/
 *.exe
 *.exe~
 *.dll
@@ -32,3 +33,6 @@ rust-impl/Cargo.lock
 # Go
 *.test
 *.out
+
+# Haskell
+haskell-impl/dist-newstyle/

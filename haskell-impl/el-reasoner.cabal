@@ -1,0 +1,20 @@
+cabal-version:   3.0
+name:            el-reasoner
+version:         0.1.0
+license:         MIT
+author:          anusornc
+build-type:      Simple
+
+executable el-reasoner
+  main-is:         Main.hs
+  other-modules:   Reasoner
+  build-depends:   base >= 4.14 && < 5
+                 , containers >= 0.6
+                 , unordered-containers >= 0.2
+                 , hashable >= 1.3
+                 , vector >= 0.12
+                 , text >= 1.2
+                 , time >= 1.9
+  ghc-options:     -O2 -threaded -rtsopts -with-rtsopts=-N
+  hs-source-dirs:  src
+  default-language: Haskell2010
